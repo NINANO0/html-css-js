@@ -1,0 +1,24 @@
+jefferyryu@gmail.com
+I have one more question, can I try it on spotfire?
+Yes, you can use the same approach to create a loading animation in Spotfire.
+
+First, create a new HTML text area in Spotfire by right-clicking on the visualization area and selecting "Add HTML Text Area".
+
+Next, copy and paste the HTML code provided in the previous answer into the HTML text area.
+
+Update the images array with the file names and paths to your own images. You can add your images to a folder in the Spotfire library and reference them using the relative path.
+
+Finally, update the CSS to style the loading div as desired. You can use the Spotfire CSS classes to style the div and position it on the page.
+
+Once you have made these changes, you should see the loading animation displayed in your Spotfire visualization. Note that if your Spotfire visualization takes a long time to load, you may need to adjust the setTimeout() value to slow down or speed up the animation.
+
+
+
+
+jefferyryu@gmail.com
+you mean I add image file on library path, right? but other users will access on web url, also it working well?
+Yes, that's correct. You can add the image files to the Spotfire library and reference them using the relative path in your HTML code.
+
+If the Spotfire server is configured to allow external access to the library, other users should be able to access the images through the web URL. However, if the Spotfire server is behind a firewall or not accessible externally, other users may not be able to view the images.
+
+To ensure that the images are accessible to all users, you could host the images on a separate web server that is accessible externally, and reference them using the full URL in your HTML code. This would ensure that the images can be viewed by all users, regardless of their access to the Spotfire library.
