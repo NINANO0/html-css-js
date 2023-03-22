@@ -1,112 +1,236 @@
 <!DOCTYPE html>
 <html lang="ko">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-		<meta property="og:type" />
-		<meta property="og:site_name" />
-		<meta property="og:title" />
-		<meta property="og:description" />
-		<meta property="og:image" />
+    <meta property="og:type" />
+    <meta property="og:site_name" />
+    <meta property="og:title" />
+    <meta property="og:description" />
+    <meta property="og:image" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <title></title>
 
-		<title></title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Song+Myung&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./images/favicon.png" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Song+Myung&display=swap");
+      * {
+        font-family: "Song Myung", serif;
+      }
+    </style>
+    <!-- 페이지 타입 -->
+    <meta property="og:type" content="website" />
+    <!-- 이름 -->
+    <meta property="og:site_name" content="HTML&CSS" />
+    <!-- 제목 -->
+    <meta property="og:title" content="김인호 과제 제출" />
+    <!-- 설명 -->
+    <meta property="og:description" content="고생하셨습니다" />
+    <!-- 대표 이미지 -->
+    <meta property="og:image" content="./images/ya-don.png" />
+  </head>
+  <body>
+    <!-- <div class="container">
+      <header class="bootstrap-header lh-1 py-3">
+        <div class="row flex-nowrap justify-content-between align-items-center">
+          <h1 class="text-left">
+            <a class="bootstrap-header-logo text-dark" href="#"
+              >안녕하세요. 반갑습니다</a
+            >👋
+          </h1>
+        </div>
+      </header>
+    </div> -->
 
-		<link rel="stylesheet" />
+    <main class="container">
+      <div class="p-4 p-md-5 mb-4 rounded text-bg-dark">
+        <div class="col-md-6 px-0">
+          <h1 class="display-7">
+            Bootstrap을 활용해
+            <span style="background-color: grey">퍼스널 브랜딩 페이지</span>
+            만들기
+          </h1>
+          <p class="lead my-3">
+            다양한 태그와 라이브러리를 사용하여 자유롭게 표현해보세요
+          </p>
+        </div>
+      </div>
 
-		<link rel="icon" />
-	</head>
-	<body>
-		<div class="container">
-			<header class="bootstrap-header lh-1 py-3">
-				<div class="row flex-nowrap justify-content-between align-items-center">
-					<h1 class="text-left">
-						<a class="bootstrap-header-logo text-dark" href="#"
-							>안녕하세요. 반갑습니다</a
-						>👋
-					</h1>
-				</div>
-			</header>
-		</div>
+      <div class="row mb-2">
+        <div class="col-md-4">
+          <div
+            class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-100 position-relative"
+          >
+            <div class="col p-4 d-flex flex-column position-static">
+              <h3 class="mb-0">경력</h3>
+              <a class="stretched-link" href="#experience">자세히 보기</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div
+            class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-100 position-relative"
+          >
+            <div class="col p-4 d-flex flex-column position-static">
+              <h3 class="mb-0">취미</h3>
+              <a class="stretched-link" href="#hobby">자세히 보기</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div
+            class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-100 position-relative"
+          >
+            <div class="col p-4 d-flex flex-column position-static">
+              <h3 class="mb-0">기타</h3>
+              <a class="stretched-link" href="#etc">자세히 보기</a>
+            </div>
+          </div>
+        </div>
+      </div>
 
-		<main class="container">
-			<div class="p-4 p-md-5 mb-4 rounded text-bg-dark">
-				<div class="col-md-6 px-0">
-					<h1 class="display-7">
-						Bootstrap을 활용해 퍼스널 브랜딩 페이지 만들기
-					</h1>
-					<p class="lead my-3">
-						다양한 태그와 라이브러리를 사용하여 자유롭게 표현해보세요
-					</p>
-				</div>
-			</div>
+      <div class="row g-5">
+        <div class="col-md-8">
+          <article id="experience" class="bootstrap-post">
+            <h2 class="bootstrap-post-title mb-1" style="font-weight: bold">
+              🧳 경력
+            </h2>
+            <h3 style="font-weight: bold">리스트 사용하기</h3>
+            <p>UL을 활용하여 리스트를 표현해보세요</p>
+            <ul>
+              <li>첫번째</li>
+              <li>두번째</li>
+              <li>세번째</li>
+            </ul>
+            <p>OL을 활용하여 리스트를 표현해보세요</p>
 
-			<div class="row mb-2">
-				<div class="col-md-4">
-					<div
-						class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-100 position-relative"
-					>
-						<div class="col p-4 d-flex flex-column position-static">
-							<h3 class="mb-0">경력</h3>
-							<a class="stretched-link">자세히 보기</a>
-						</div>
-					</div>
-				</div>
-			</div>
+            <ol>
+              <li>첫번째</li>
+              <li>두번째</li>
+              <li>세번째</li>
+            </ol>
 
-			<div class="row g-5">
-				<div class="col-md-8">
-					<article id="experience" class="bootstrap-post">
-						<h2 class="bootstrap-post-title mb-1">🧳 경력</h2>
-					</article>
+            <p>DL을 활용하여 리스트를 표현해보세요</p>
 
-					<article id="hobby" class="bootstrap-post">
-						<h2 class="bootstrap-post-title mb-1">🧗🏻‍♀️ 취미</h2>
-					</article>
+            <dl>
+              <dt>HyperText Markup Language (HTML)</dt>
+              <dd>HTML이란?</dd>
+              <dt>Cascading Style Sheets (CSS)</dt>
+              <dd>CSS란?</dd>
+              <dt>Javascript (JS)</dt>
+              <dd>JS란?</dd>
+            </dl>
+          </article>
+          <br /><br />
+          <article id="hobby" class="bootstrap-post">
+            <h2 class="bootstrap-post-title mb-1" style="font-weight: bold">
+              🧗🏻‍♀️ 취미
+            </h2>
+            <h3 style="font-weight: bold">헤딩 활용하기</h3>
+            <span
+              >div요소는 플로우 콘텐츠를 위한 통용 컨테이너입니다. CSS로 꾸미기
+              전에는 콘텐츠나 레이아웃에 어떤 영향도 주지 않습니다.</span
+            >
+            <h3 style="font-weight: bold">서브 헤딩</h3>
+            <span
+              >P 요소는 하나의 문단을 나타냅니다. 시각적인 매체에서, 문단은 보통
+              인접 블록과의 여백과 첫 줄의 들여쓰기로 구분하지만, HTML에서
+              문단은 이미지나 입력 폼 등 서로 관련있는 콘텐츠 무엇이나 될 수
+              있습니다.</span
+            >
+          </article>
+          <br /><br />
+          <article id="etc" class="bootstrap-post">
+            <h2 class="bootstrap-post-title mb-1" style="font-weight: bold">
+              😀 기타
+            </h2>
+            <h3 style="font-weight: bold">
+              아직 더 표현하고 싶은게 있으신가요?
+            </h3>
+            <p>아직도<mark>다양한 태그</mark>들이 남았답니다.</p>
+            <p>
+              <a
+                href="https://developer.mozilla.org/ko/docs/Web/HTML/Element"
+                target="_blank"
+                >여기에서</a
+              >
+              더 다양한 태그들을 확인해보시고 간단하게 사용해보세요
+            </p>
+            <p>
+              이미 만들어진 간단한 부트스트랩 스타일을 사용하고 싶다면?
+              <a href="https://getbootstrap.com" target="_blank">
+                부스트스트랩 문서를 참고해보세요
+              </a>
+            </p>
+          </article>
+        </div>
 
-					<article id="etc" class="bootstrap-post">
-						<h2 class="bootstrap-post-title mb-1">😀 기타</h2>
-						<h3>아직 더 표현하고 싶은게 있으신가요?</h3>
-						<p>아직도<mark>다양한 태그</mark>들이 남았답니다.</p>
-						<p>
-							<a
-								href="https://developer.mozilla.org/ko/docs/Web/HTML/Element"
-								target="_blank"
-								>여기에서</a
-							>
-							더 다양한 태그들을 확인해보시고 간단하게 사용해보세요
-						</p>
-						<p>
-							이미 만들어진 간단한 부트스트랩 스타일을 사용하고 싶다면?
-							<a href="https://getbootstrap.com" target="_blank">
-								부스트스트랩 문서를 참고해보세요
-							</a>
-						</p>
-					</article>
-				</div>
+        <div class="col-md-4">
+          <div class="position-sticky" style="top: 2rem">
+            <div class="p-4 mb-3 bg-light rounded">
+              <h4 style="font-weight: bold">About</h4>
+              <p>
+                저에 대해 더 궁금하신가요? 자세히 알고 싶다면 아래의 소셜을
+                확인해주세요
+              </p>
+            </div>
 
-				<div class="col-md-4">
-					<div class="position-sticky" style="top: 2rem">
-						<div class="p-4 mb-3 bg-light rounded">
-							<h4>About</h4>
-						</div>
+            <div class="p-4">
+              <h4 style="font-weight: bold">Social</h4>
+              <div>
+                <a href="https://ko-kr.facebook.com/" target="_blank"
+                  >페이스북</a
+                >
+              </div>
+              <div>
+                <a href="https://www.instagram.com/" target="_blank"
+                  >인스타그램</a
+                >
+              </div>
+              <div>
+                <a href="mailto:inho3915@gmail.com" target="_blank"
+                  >메일 보내기</a
+                >
+              </div>
+              <div>
+                <a href="tel:010-2113-3915" target="_blank">전화 걸기</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
 
-						<div class="p-4">
-							<h4>Social</h4>
-						</div>
-					</div>
-				</div>
-			</div>
-		</main>
-
-		<footer class="bootstrap-footer">
-			<p>
-				template built for
-				<a href="https://getbootstrap.com/">Bootstrap</a>
-			</p>
-			<p>
-				<a href="#">Back to top</a>
-			</p>
-		</footer>
-	</body>
+    <footer class="bootstrap-footer">
+      <div
+        class="container p-3 border text-center"
+        style="background-color: var(--bs-tertiary-bg)"
+      >
+        <p>
+          template built for
+          <a href="https://getbootstrap.com/">Bootstrap</a>
+        </p>
+        <p>
+          <a href="#">Back to top</a>
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>
